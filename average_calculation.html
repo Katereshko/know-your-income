@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Rate Calculation</title>
+    <link rel="stylesheet" href="average_calculation.css">
+</head>
+<body>
+    <header>
+        <h1>Рассчитайте среднемесячный оклад</h1>
+        <h2>(учитываются премии, а также выплаты на предыдущем месте работы)</h2>
+    </header>
+    <main>
+        <div class="calculation_block">
+            <img id="circle_arrow_pink" src="./assets/circle_arrow_pink.png">
+            <p id="explanation_text">Если ваш оклад менялся в течение года, укажите все суммы<br> за 12 месяцев перед месяцем отпуска</p>
+            <div class="monthly_inputs">
+                <input id="one_month_ago" placeholder="1 месяц назад">
+                <input id="two_month_ago" placeholder="2 месяца назад">
+                <input id="three_month_ago" placeholder="3 месяца назад">
+                <input id="four_month_ago" placeholder="4 месяца назад">
+                <input id="five_month_ago" placeholder="5 месяцев назад">
+                <input id="six_month_ago" placeholder="6 месяцев назад">
+                <input id="seven_month_ago" placeholder="7 месяцев назад">
+                <input id="eight_month_ago" placeholder="8 месяцев назад">
+                <input id="nine_month_ago" placeholder="9 месяцев назад">
+                <input id="ten_month_ago" placeholder="10 месяцев назад">
+                <input id="eleven_month_ago" placeholder="11 месяцев назад">
+                <input id="twelve_month_ago" placeholder="12 месяцев назад">
+            </div>
+            <button class="pointer" id="btn">Рассчитать</button>
+            <p>Ваш среднемесячный оклад составляет:</p>
+            <p id="monthly_average"></p>
+        </div>
+        <div class="button-container">
+            <button class="pointer"><a href="index.html">Назад</a></button>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="average_calculation.js"></script>
+</body>
+</html>
